@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - air tickit office@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="air ticket office">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="airticketoffice"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <table id="6" parent="1" name="seats"/>
+    <table id="7" parent="1" name="tickets"/>
+    <table id="8" parent="1" name="airplanes"/>
+    <table id="9" parent="1" name="airports"/>
+    <table id="10" parent="1" name="crews"/>
+    <table id="11" parent="1" name="timetables"/>
+    <column id="12" parent="6" name="idSeats">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="13" parent="6" name="Row">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="14" parent="6" name="Number">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="15" parent="6" name="Type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="16" parent="6" name="Airplaneid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="17" parent="6" name="PRIMARY">
+      <columns>idSeats</columns>
+      <primary>1</primary>
+    </key>
+    <column id="18" parent="7" name="idTickets">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="19" parent="7" name="FullName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="20" parent="7" name="document">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="21" parent="7" name="Passportseries">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="22" parent="7" name="Passportnumber">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="23" parent="7" name="Flightnumber">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="24" parent="7" name="Seatid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="25" parent="7" name="status">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="26" parent="7" name="date">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="27" parent="7" name="Price">
+      <mandatory>1</mandatory>
+      <data-type>double|0</data-type>
+    </column>
+    <key id="28" parent="7" name="PRIMARY">
+      <columns>idTickets</columns>
+      <primary>1</primary>
+    </key>
+    <column id="29" parent="8" name="idAirplanes">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="30" parent="8" name="Departureairport">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="31" parent="8" name="Arrivalairport">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="32" parent="8" name="Airplanename">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="33" parent="8" name="PRIMARY">
+      <columns>idAirplanes</columns>
+      <primary>1</primary>
+    </key>
+    <column id="34" parent="9" name="idAirports">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="35" parent="9" name="Airportname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="36" parent="9" name="Country">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="37" parent="9" name="Sity">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="38" parent="9" name="PRIMARY">
+      <columns>idAirports</columns>
+      <primary>1</primary>
+    </key>
+    <column id="39" parent="10" name="idCrews">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="40" parent="10" name="FullName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="41" parent="10" name="Age">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="42" parent="10" name="Country">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="43" parent="10" name="Sity">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="44" parent="10" name="Position">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="45" parent="10" name="PRIMARY">
+      <columns>idCrews</columns>
+      <primary>1</primary>
+    </key>
+    <column id="46" parent="11" name="idTimetables">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="47" parent="11" name="Dateofdeparture">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="48" parent="11" name="Dateofarrival">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="49" parent="11" name="PRIMARY">
+      <columns>idTimetables</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
